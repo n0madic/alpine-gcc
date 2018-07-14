@@ -39,7 +39,6 @@ RUN ./configure \
         --disable-symvers \
         --disable-werror \
         --enable-__cxa_atexit \
-        --enable-cloog-backend \
         --enable-default-pie \
         --enable-languages=c,c++ \
         --enable-shared \
