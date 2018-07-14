@@ -46,8 +46,12 @@ RUN ./configure \
         --enable-tls \
         --with-linker-hash-style=gnu \
         --with-system-zlib
-RUN make --silent -j $(nproc)
-RUN make --silent -j $(nproc) install-strip
+RUN make --silent -j $(nproc) all-gcc
+RUN make --silent -j $(nproc) install-strip-gcc
+RUN make --silent -j $(nproc) all-target-libgcc
+RUN make --silent -j $(nproc) install-strip-target-libgcc
+RUN make --silent -j $(nproc) all-target-libstdc++-v3
+RUN make --silent -j $(nproc) install-strip-target-libstdc++-v3
 
 RUN gcc -v
 
