@@ -5,9 +5,9 @@ This image is based on Alpine Linux image and contains [C/C++ compiler](https://
 ## Docker Hub images
 
 ```
-$ docker pull n0madic/alpine-gcc:7.3.0
+$ docker pull n0madic/alpine-gcc:7.4.0
 or
-$ docker pull n0madic/alpine-gcc:8.2.0
+$ docker pull n0madic/alpine-gcc:8.3.0
 ```
 
 ## Build image and usage
@@ -15,8 +15,8 @@ $ docker pull n0madic/alpine-gcc:8.2.0
 ```
 $ git clone https://github.com/n0madic/alpine-gcc.git
 $ cd alpine-gcc
-$ docker build --build-arg GCC_VERSION=7.3.0 -t alpine-gcc .
+$ docker build --build-arg GCC_VERSION=7.4.0 -t alpine-gcc .
 or
-$ docker build --build-arg GCC_VERSION=8.2.0 -t alpine-gcc .
+$ docker build --build-arg GCC_VERSION=8.3.0 -t alpine-gcc .
 $ docker run --rm -it -v $(pwd):/src alpine-gcc
 ```
