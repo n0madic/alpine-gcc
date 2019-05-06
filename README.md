@@ -1,6 +1,6 @@
 # The Alpine Docker image with latest GCC
 
-This image is based on Alpine Linux image and contains [C/C++ compiler](https://gcc.gnu.org/) (GCC 7/8).
+This image is based on Alpine Linux image and contains [C/C++ compiler](https://gcc.gnu.org/) (GCC 7/8/9).
 
 ## Docker Hub images
 
@@ -8,6 +8,8 @@ This image is based on Alpine Linux image and contains [C/C++ compiler](https://
 $ docker pull n0madic/alpine-gcc:7.4.0
 or
 $ docker pull n0madic/alpine-gcc:8.3.0
+or
+$ docker pull n0madic/alpine-gcc:9.1.0
 ```
 
 ## Build image and usage
