@@ -49,7 +49,7 @@ RUN ./configure \
 RUN make --silent -j $(nproc)
 RUN make --silent -j $(nproc) install-strip
 
-RUN ln -s /usr/local/bin/gcc /usr/local/bin/cc
+RUN ln -s /usr/bin/gcc /usr/local/bin/cc
 
 RUN gcc -v
 
