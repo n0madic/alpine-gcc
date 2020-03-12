@@ -49,6 +49,8 @@ RUN ./configure \
 RUN make --silent -j $(nproc)
 RUN make --silent -j $(nproc) install-strip
 
+RUN ln -s /usr/local/bin/gcc /usr/local/bin/cc
+
 RUN gcc -v
 
 
@@ -67,13 +69,11 @@ RUN apk add --quiet --no-cache \
             libtool \
             make \
             mpc1 \
-            mpfr3 \
+            mpfr4 \
             musl-dev \
             pkgconf \
             zlib-dev
 
 COPY --from=builder /usr/local/ /usr/
-
-RUN ln -s /usr/bin/gcc /usr/bin/cc
 
 WORKDIR /src
