@@ -18,5 +18,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
+          build-args: |
+            GCC_VERSION=${{github.ref_name}}
           push: true
           tags: n0madic/alpine-gcc:${{github.ref_name}}
