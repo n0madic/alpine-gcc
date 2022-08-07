@@ -1,3 +1,0 @@
-#!/bin/sh
-
-docker build --build-arg GCC_VERSION=${DOCKER_TAG} -t ${IMAGE_NAME} .
