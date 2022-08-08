@@ -12,6 +12,8 @@ or
 $ docker pull n0madic/alpine-gcc:9.2.0
 ```
 
+All versions can be seen on [Docker Hub](https://hub.docker.com/r/n0madic/alpine-gcc/tags)
+
 ## Build image and usage
 
 ```
